@@ -1,0 +1,5 @@
+#!/bin/bash
+
+mkdir $1
+cp ./show-window/Makefile $1
+cp ./show-window/main.c $1
