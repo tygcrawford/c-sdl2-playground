@@ -8,6 +8,8 @@
 #include <SDL2/SDL_mixer.h>
 #include <wchar.h>
 
+// TODO: figure out what you need to keep
+
 int main(int argc, char* argv[]) {
     SDL_Window* window = NULL;
 

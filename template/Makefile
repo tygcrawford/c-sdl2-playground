@@ -1,3 +1,6 @@
+# TODO: rewatch python Makefile video
+TARGET := out
+
 CC = clang
 CLANG_SDL = -lSDL2main -lSDL2 -lSDL2_image -lSDL2_ttf -lSDL2_mixer
 SOURCES = main.c
@@ -6,8 +9,9 @@ TARGET = $(TARGET_DIR)/main
 
 .PHONY: build
 
+all: $(TARGET)
 
-build:
+$(TARGET):
 	$(CC) $(CLANG_SDL) $(SOURCES) -o $(TARGET)
 
 clean:
